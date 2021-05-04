@@ -21,11 +21,7 @@ public class Main {
 		CustomerManager customerManager = new CustomerManager(new UserControlManager());
 		customerManager.add(customer1);
 		customerManager.add(customer2);
-		customerManager.delete(customer1);
-		customerManager.delete(customer2);
-		customerManager.update(customer1);
-		customerManager.update(customer2);
-
+		
 		
 		
 	        Campaign campaign1 = new Campaign();
