@@ -7,26 +7,31 @@ public class Main {
 		Customer customer1 = new Customer();
 		customer1.setId(1);
 		customer1.setName("Furkan");
-		customer1.setLastName("İŞCAN");
+		customer1.setLastName("ÃÃCAN");
 		customer1.setIdentityNumber("12345678900");
 		customer1.setBirthYear(1453);
 
 		Customer customer2 = new Customer();
 		customer2.setId(2);
-		customer2.setName("Ebubekir Sıddık");
-		customer2.setLastName("Hoşgeldin");
+		customer2.setName("Ebubekir SÃ½ddÃ½k");
+		customer2.setLastName("HoÃ¾geldin");
 		customer2.setIdentityNumber("123456789");
 		customer2.setBirthYear(2005);
 		
 		CustomerManager customerManager = new CustomerManager(new UserControlManager());
 		customerManager.add(customer1);
 		customerManager.add(customer2);
+		customerManager.delete(customer1);
+		customerManager.delete(customer2);
+		customerManager.update(customer1);
+		customerManager.update(customer2);
+
 		
 		
-		Campaign campaign1 = new Campaign();
+	        Campaign campaign1 = new Campaign();
 		campaign1.setId(3);
-		campaign1.setCampaignName("Fps oyunlarında extra indirim !!!!!");
-		campaign1.setCampaignDetails("Bir fps oyunu alana diğeri &10 indirimli");
+		campaign1.setCampaignName("Fps oyunlarÃ½nda extra indirim !!!!!");
+		campaign1.setCampaignDetails("Bir fps oyunu alana diÃ°eri &10 indirimli");
 		
 		CampaignManager campaignManager = new CampaignManager();
 		campaignManager.add(campaign1);
